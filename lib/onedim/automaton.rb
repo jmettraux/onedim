@@ -36,6 +36,13 @@ module OneDim
       @rule = rule
       @time = 0
     end
+
+    def step
+
+      @time += 1
+
+      [ @time, @state ]
+    end
   end
 end
 
