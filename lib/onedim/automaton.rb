@@ -45,7 +45,9 @@ module OneDim
         (0..@state.length - 1).collect { |i|
           local_state =
             @state[i - 1] + @state[i] + (@state + @state[0])[i + 1]
-          Rule.new(@rule).apply(local_state.to_i(2)).to_s
+          local_state =
+            local_state.to_i(2)
+          ((@rule >> local_state) & 1).to_s
         }.join
 
       [ @time, @state ]
