@@ -27,10 +27,11 @@ module OneDim
 
   class Automaton
 
-    attr_reader :time
+    attr_reader :time, :state, :initial_state
 
     def initialize(state, rule)
 
+      @initial_state = state
       @state = state
       @rule = rule
       @time = 0

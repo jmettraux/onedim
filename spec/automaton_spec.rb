@@ -12,13 +12,23 @@ describe OneDim::Automaton do
     end
   end
 
-  describe '#current' do
+  describe '#initial_state' do
+
+    it 'returns the automaton initial state' do
+
+      a = OneDim::Automaton.new('00001', 110)
+
+      a.initial_state.should == '00001'
+    end
+  end
+
+  describe '#state' do
 
     it 'returns the current state as a string' do
 
       a = OneDim::Automaton.new('00001', 110)
 
-      a.current..should == '00001'
+      a.state.should == '00001'
     end
   end
 
