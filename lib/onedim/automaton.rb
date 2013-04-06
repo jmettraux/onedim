@@ -44,7 +44,7 @@ module OneDim
       @state =
         (0..@state.length - 1).collect { |i|
           local_state =
-            @state[i - 1] + @state[i] + (@state)[i + 1]
+            @state[i - 1] + @state[i] + (@state + @state[0])[i + 1]
           p local_state
           '0'
         }.join
