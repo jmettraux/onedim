@@ -5,7 +5,12 @@ require 'onedim'
 
 state, rule, freq = ARGV
 
-freq = (freq || 0.4).to_f
+state ||=
+  '000000000000000000000000000000000000000000000000000000000000000000000000010'
+rule ||=
+  110
+freq =
+  (freq || 0.1).to_f
 
 a = OneDim::Automaton.new(state, rule.to_i)
 
