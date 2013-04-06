@@ -57,6 +57,7 @@ describe OneDim::Automaton do
       a = OneDim::Automaton.new('00001', 110)
 
       a.step.should == [ 1, '00011' ]
+      a.step.should == [ 2, '00111' ]
     end
   end
 end
