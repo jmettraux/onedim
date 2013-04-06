@@ -10,7 +10,7 @@ freq = (freq || 0.4).to_f
 a = OneDim::Automaton.new(state, rule.to_i)
 
 loop do
-  puts a.state
+  puts '  ' + a.state_color
   sleep(freq)
   a.step
 end

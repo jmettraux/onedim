@@ -52,6 +52,13 @@ module OneDim
 
       [ @time, @state ]
     end
+
+    def state_color
+
+      @state.chars.collect { |c|
+        c == '0' ? "[42m [0m" : "[40m [0m"
+      }.join
+    end
   end
 end
 
