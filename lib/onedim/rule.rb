@@ -34,10 +34,7 @@ module OneDim
 
     def apply(state)
 
-      srule = @rule.to_s(2)
-        # for example : "1101110"
-
-      @rule.to_s(2)[srule.length - (state + 1)].to_i
+      (@rule >> state) & 1
     end
   end
 end
