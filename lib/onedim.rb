@@ -1,4 +1,5 @@
 
-require 'onedim/version.rb'
-require 'onedim/rule.rb'
+require 'onedim/version'
+require 'onedim/rule'
+require 'onedim/automaton'
 
