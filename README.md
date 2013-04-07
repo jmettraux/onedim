@@ -22,7 +22,7 @@ for example:
 
 ## presenting
 
-I presented the repository going from the initial commit to the latest commit. to navigate from one commit to the other with a minimum hassle, I used [gmo](misc/gmo) a tiny ruby script wrapping some git commands. Doing ```gmo next``` moves to the next commit. I could thus show the evolution of the development, especially the test first approach and some refactoring.
+I presented the repository going from the initial commit to the latest commit. to navigate from one commit to the other with a minimum hassle, I used [gmo](misc/gmo), a tiny ruby script wrapping some git commands. Doing ```gmo next``` moves to the next commit for example. I could thus show the evolution of the development, especially the test first approach and some refactoring.
 
 
 ## credits
